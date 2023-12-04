@@ -26,4 +26,11 @@ public class Circle extends Shape {
         g2d.setColor(color);
         g2d.fillOval(x - radius, y - radius, 2 * radius, 2 * radius);
     }
+
+    @Override
+    public Bounds getBounds() {
+        int diameter = 2 * radius;
+        return new Bounds(x - radius, y - radius, diameter, diameter);
+    }
+
 }

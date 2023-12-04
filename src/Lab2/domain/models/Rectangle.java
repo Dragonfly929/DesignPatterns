@@ -29,4 +29,9 @@ public class Rectangle extends Shape {
         g2d.setColor(color);
         g2d.fillRect(x, y, width, height);
     }
+
+    @Override
+    public Bounds getBounds() {
+        return new Bounds(x, y, width, height);
+    }
 }

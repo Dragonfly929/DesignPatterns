@@ -23,4 +23,6 @@ public abstract class Shape {
     public abstract Shape clone();
 
     public abstract void draw(Graphics2D g2d);
+
+    public abstract Bounds getBounds();
 }
