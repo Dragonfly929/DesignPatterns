@@ -73,8 +73,9 @@ The project implements the decorator pattern to enhance the drawing app by allow
 - **User Interaction:** Users can draw circles and rectangles with or without borders, choosing colors for both fill and border.
 
 
-### Adapter
-
+### Composite
+### Flyweight
+### Bridge
 ---
 
 Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
