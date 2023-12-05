@@ -76,6 +76,7 @@ The project implements the decorator pattern to enhance the drawing app by allow
 ### Composite
 ### Flyweight
 ### Bridge
+
 ---
 
 Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.

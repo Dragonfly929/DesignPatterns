@@ -1,5 +1,6 @@
 package Lab2.client;
 
+import Lab2.domain.factory.ColorFlyweightFactory;
 import Lab2.domain.models.ShapeManager;
 import Lab2.gui.DrawingCanvas;
 import Lab2.utilities.GUIUtil;
@@ -98,19 +99,7 @@ public class DrawingApp extends JFrame {
                 "Choose color:", "Color Selection", JOptionPane.QUESTION_MESSAGE, null,
                 colors, colors[0]);
 
-        switch (selectedColor) {
-            case "Red":
-                return Color.RED;
-            case "Blue":
-                return Color.BLUE;
-            case "Green":
-                return Color.GREEN;
-            case "Yellow":
-                return Color.YELLOW;
-            case "Black":
-            default:
-                return Color.BLACK;
-        }
+        return ColorFlyweightFactory.getColor(selectedColor);
     }
 
     public static void main(String[] args) {
